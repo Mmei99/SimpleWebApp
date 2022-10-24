@@ -1,0 +1,5 @@
+.background-image {
+	backround-image: url('./images/signin-image.jpg');
+	background-size: cover;
+	backround-repeat: no-repeat;
+}

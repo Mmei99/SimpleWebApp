@@ -1,0 +1,30 @@
+  document.addEventListener("DOMContentLoaded",()=>{
+                    const rows=document.querySelectorAll("tr[data-href]");
+                    rows.forEach(row =>{
+						row.addEventListener("click",()=>{
+							var table=document.getElementById("tableID");
+							
+							const input = document.getElementById('id');
+							localStorage.setItem('plan', 3);
+							
+							
+							let options='statusbar=no,height=300,width=600,id=ID'
+							let ref=window.open("showUser.jsp","","options");
+							
+
+						})
+
+
+					})
+                    	
+                    	
+                    	
+                    });
+
+
+
+
+ALTER TABLE `addresses`
+ADD CONSTRAINT `userAddress`
+FOREIGN KEY (`userID`) REFERENCES `user` (`ID`)
+ON DELETE CASCADE;
